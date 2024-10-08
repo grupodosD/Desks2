@@ -1,0 +1,318 @@
+body  {
+    background-color: #2D2828;
+    height: 100vh;
+    margin: 0;
+}
+
+#Pag{
+    background-color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central {
+    display: flex;
+    width: 90%;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2em; /* Espaço adicional no topo */
+}
+
+.login h1{
+    font-size: 2rem;
+    font-family: 'Vollkorn SC', serif;
+    color: #FFFFFF
+}
+
+.login p{
+    font-size: 1rem;
+    font-family: 'Vollkorn SC', serif;
+    padding: 0.3rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-items: center;
+    width: 80%;
+}
+
+.campos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #313030;
+    box-shadow: inset 1px 2.5px 5px #000000;
+}
+
+.input-icon {
+    width: 24px;
+    height: 24px;
+    fill: #36547B;
+}
+
+.input-field {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fefefe;
+    font-size: 16px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.enviar {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.enviar:hover {
+    background-color: #36547B;
+}
+
+
+.Seleciona {
+    position: fixed; /* Fixa o elemento na tela */
+    top: 50%; /* Posiciona o topo do elemento no meio da tela verticalmente */
+    left: 50%; /* Posiciona o lado esquerdo do elemento no meio da tela horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o elemento para que ele esteja centralizado exatamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.1rem; /* Espaçamento opcional */
+  }
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.coluna-direita {
+    gap: 1rem;
+}
+
+ .opcao-dashboard {
+    width: 30vw;
+    height: 20vw;
+    margin: 1rem;
+    text-align: center;
+    background-color: #cecece;
+    box-shadow: 0 0 5px #36547B;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+
+
+.opcao-dashboard img {
+    width: 60%;
+    height: 80%;
+}
+
+.opcao-dashboard p {
+    background-color: #36547B;
+    width: 100% ;
+    color: #FFF8F8;
+    font-size: 1.2rem;
+    font-family: 'Inria Sans', serif;
+    border-radius: 0.5.5rem;
+}
+
+.opcao-dashboard:hover {
+    transform: scale(1.05);
+    background-color: #36547B;
+    box-shadow: 0 0 10px #171717;
+}
+
+
+/* Remover linha azul de links */
+a {
+    text-decoration: none; /* Remover sublinhado */
+    color: inherit; /* Manter a cor padrão do texto */
+  }
+  
+  /* Alterar o estilo do cursor quando passar o mouse sobre o link */
+  a:hover {
+    cursor: pointer;
+  }
+  
+
+  .top-bar {
+    background-color: #171717;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para a barra de pesquisa de usuários */
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .home-icon, .chart-icon, .bed-icon, .key-icon,.back-icon {
+    color: #197dff;
+    font-size: 1.5rem;
+  }
+  
+  .back-icon {
+    position: absolute;
+    left: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+  
+  .user-login {
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+    padding-right: 1rem;
+  }
+  
+  .search-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .search-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #313030;
+    color: #d3d3d3;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #197dff; /* Define a borda azul ao redor do campo de pesquisa */
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .search-button:hover {
+    background-color: #36547B;
+  }
+  
+  .user-display {
+    margin-top: 2rem;
+    background-color: #838383;
+    border-radius: 0.5rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .mais:hover {
+    background-color: #36547B;
+  }
+
+#checklist {
+    background-color: #36547B;
+    width: 180px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #checklist label {
+    color: #d3c8de;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  #checklist input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  #checklist input[type="checkbox"]:checked + label {
+    color: #ffffff;
+  }
+  
+  
+

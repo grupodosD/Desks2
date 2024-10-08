@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Harry.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Gerenciamento_de_quartos</title>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="back-icon">
+      <a href="Pag2.html"><i class="material-icons">arrow_back</i></a>
+    </div>
+
+    <div class="icon-container">
+      <a href="home.html" class="home-icon"><i class="material-icons">home</i></a>
+      <a href="chart.html" class="chart-icon"><i class="material-icons">bar_chart</i></a>
+      <a href="bed.html" class="bed-icon"><i class="material-icons">king_bed</i></a>
+      <a href="PagChekin.html" class="key-icon"><i class="material-icons">key</i></a>
+  </div>
+
+    <div class="user-login">@<span id="user-name">Usuário</span></div>
+  </div>
+
+      <div class="user-display">
+     -- Aqui serão exibidos os quartos
+      </div>
+      <div id="checklist">
+        <input value="1" name="r" type="checkbox" id="01" />
+        <label for="01">limpo</label>
+        <input value="2" name="r" type="checkbox" id="02" />
+        <label for="02">ocupado</label>
+        <input value="3" name="r" type="checkbox" id="03" />
+        <label for="03">Premium</label>
+        <input value="4" name="r" type="checkbox" id="04" />
+        <label for="04">Comum</label>
+      </div>
+    </div>
+    <script>
+      // Recupera o nome do usuário do localStorage e exibe na tela
+      const userName = localStorage.getItem('user');
+      if (userName) {
+        document.getElementById('user-name').textContent = userName;
+      }
+    </script>
+</body>
+</html>

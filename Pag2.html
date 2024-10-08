@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Harry.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Seleciona</title>
+</head>
+<body >
+  <div class="top-bar">
+    <div class="icon-container">
+      <a href="home.html" class="home-icon"><i class="material-icons">home</i></a>
+      <a href="chart.html" class="chart-icon"><i class="material-icons">bar_chart</i></a>
+      <a href="bed.html" class="bed-icon"><i class="material-icons">king_bed</i></a>
+      <a href="PagChekin.html" class="key-icon"><i class="material-icons">key</i></a>
+  </div>
+
+    <div class="user-login">@<span id="user-name">Usuário</span></div>
+</div>
+
+  <div class="Seleciona">
+    <div class="coluna-direita">
+      <div class="opcao-dashboard">
+        <a href="PagChekin.html">
+          <img src="img/chave.png" alt="">
+          <p>Check-in e Check-out</p>
+        </a>
+      </div>
+        <div class="opcao-dashboard">
+          <a href="PagChekin.html">
+            <img src="img/Estrelas.png" alt="">
+            <p>Avaliação</p>
+          </a>
+        </div>
+    </div>
+      <div class="coluna-direita">
+        <div class="opcao-dashboard">
+          <a href="PagQuartos.html">
+            <img src="img/quarto.png" alt="">
+            <p>Gerenciamento de Quartos</p>
+          </a>
+        </div>
+        <div class="opcao-dashboard">
+          <a href="PagDashboard.html">
+            <img src="img/dashboadr.png" alt="">
+            <p>Dashboard</p>
+          
+        </a>
+      </div>
+    </div>
+    <script>
+      // Recupera o nome do usuário do localStorage e exibe na tela
+      const userName = localStorage.getItem('user');
+      if (userName) {
+        document.getElementById('user-name').textContent = userName;
+      }
+    </script>
+</body>
+</html>
+
